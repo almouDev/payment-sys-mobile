@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item android:title="@string/pending_transaction"
+            android:id="@+id/nav_pending_transactions"/>
+        <item
+            android:id="@+id/nav_transactions"
+            android:title="@string/menu_transaction" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/menu_profile" />
+        <item android:title="@string/menu_about"
+            android:id="@+id/nav_about"/>
+        <item android:id="@+id/logout"
+            android:title="@string/logout"/>
+    </group>
+</menu>

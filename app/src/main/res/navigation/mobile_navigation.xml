@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.almou.payment.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_transactions"
+        android:name="com.almou.payment.fragments.TransactionsFragment"
+        android:label="@string/menu_transaction"
+        tools:layout="@layout/fragment_transactions_fragments" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.almou.payment.fragments.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.almou.payment.fragments.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.almou.payment.fragments.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/transfer"
+        android:name="com.almou.payment.fragments.TransferFragment"
+        android:label="@string/nav_transfer"
+        tools:layout="@layout/fragment_transfer"
+        />
+    <fragment
+        android:id="@+id/nav_confirm_transfer"
+        android:label="@string/confirmation"
+        tools:layout="@layout/confirmation_transfer_fragment"
+        android:name="com.almou.payment.fragments.TransferConfirmationFragment"
+        />
+    <fragment
+        android:id="@+id/nav_pending_transactions"
+        android:label="@string/pending_transaction"
+        tools:layout="@layout/fragment_pending_transaction"
+        android:name="com.almou.payment.fragments.PendingTransactionFragment"
+        />
+</navigation>
